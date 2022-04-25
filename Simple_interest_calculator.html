@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Simple Interest calculator
+	</title>
+	
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src="myJS.js"></script>
+</head>
+
+	<body>
+		<center>
+			<div id='myDiv' >
+			<br/>
+			<h1>Simple Interest Calculator</h1>
+			<br/>
+				<table>
+					<tr>
+						<td> <label for="AmountField">Amount:</label> </td>
+						<td><input type="number" id="AmountField" name="AmountField" min="9999" step="1" ></td>
+					</tr>
+					<tr>
+						<td> <label for="InterestRate">Interest Rate:</label>  </td>
+						<td> <input type="number" id="InterestRate" name="InterestRate" min="1" step="1" max="100" > </td> 
+					</tr>
+					<tr>
+						<td> <label for="NoOfYears">No. Of Years:</label>  </td>
+						<td> <input type="number" id="NoOfYears" name="NoOfYears"   min="1" step="1" max="30" ></td>
+					</tr>
+					
+					<tr>
+						<td colspan="2"> <br/><button type="button" onclick="calcTotal()">Calculte Simple Interest!</button>   </td>
+					</tr>
+					
+				</table>
+				<br/><br/>
+				
+				<div id="outputDiv">
+					
+				</div>
+				<br/><br/>
+			</div>
+			
+		</center>
+	</body>
+
+</html>

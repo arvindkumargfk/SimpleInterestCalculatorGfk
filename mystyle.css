@@ -1,0 +1,37 @@
+body {
+  align-items:center;
+  justify-content: center;
+  background-color: #e7d39f;
+}
+	
+	#myDiv {
+		width:25%; 
+		background-color: orange; 
+		border-radius: 10px;		
+	}
+	
+	#outputDiv {
+		width:80%; 
+		background-color: orange;
+		text-align: left;
+		
+		font-family:    Arial, Helvetica, sans-serif;
+		font-size:      20px;
+		font-weight:    bold;
+		
+	}
+	
+	table {
+		width:70%
+	}
+	
+	td {
+		width:35%
+	}
+	
+	#AmountField, #InterestRate, #NoOfYears {
+		border-radius: 5px;
+		width:6em
+	}
+	
+	
