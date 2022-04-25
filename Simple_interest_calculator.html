@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		Simple Interest calculator
+		Web App – Simple Interest Calculator
 	</title>
 	
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -22,7 +22,7 @@
 					</tr>
 					<tr>
 						<td> <label for="InterestRate">Interest Rate:</label>  </td>
-						<td> <input type="range" id="InterestRate" name="InterestRate" min="1" max="30" value="0"> <span id="InterestRateSpan"> 0 </span>   </td> 
+						<td> <input type="range" id="InterestRate" name="InterestRate" min="1" max="20" value="1"> <span id="InterestRateSpan"> 0 </span>   </td> 
 						<!--<input type="number" id="InterestRate" name="InterestRate" min="1" step="1" max="100" >  -->
 					</tr>
 					<tr>
@@ -74,9 +74,12 @@
 				<br/><br/>
 				
 				<div id="outputDiv">
-					
+					if you deposit <span id='varPrincipleID' class='ClassValues'> </span> <br/> at an interest rate of <span id='varSInterestID' class='ClassValues'> </span>. <br/> You will recieve an amount of  <span id='FinalAmoutID' class='ClassValues'> </span> <br/> after <span id='varNoOfYearsID' class='ClassValues'> </span> years. <br/> Interest Amount: <span id='interestAmountID' class='ClassValues'> </span>
+					<span id="ErrorSpan"> </span>
 				</div>
 				<br/><br/>
+				
+				&copy; Everyone Can Get Rich <br/>
 			</div>
 			
 		</center>
