@@ -16,6 +16,7 @@ function calcTotal(){
 	var FinalAmout = 0;
 	var FinalString = "if you deposit " + varPrinciple + ",<br> at an interest rate of " + varSInterest + ". <br> You will recieve an amount of ";
 
+	
 	if (varPrinciple>0)
 	{
 		//fine
@@ -40,7 +41,7 @@ function calcTotal(){
 		alert("Interest Rate should be greater than 0");
 	}
 
-	//console.log("Hello");
+	console.log("Hello");
 	console.log("varSInterest: " + varSInterest);
 	console.log("finalInterest: " + finalInterest);
 	console.log(FinalString);
@@ -49,9 +50,15 @@ function calcTotal(){
 	FinalAmout = varPrinciple * ( 1 + (finalInterest * varNoOfYears));
 	console.log("FinalAmout: " + FinalAmout);
 
+	var interestAmount = FinalAmout - varPrinciple;
+
+
 	if (FinalAmout > 0 )
 	{
-		FinalString = FinalString + FinalAmout + ", <br> after " + varNoOfYears + "years.";	
+		FinalString = FinalString + FinalAmout + ", <br> after " + varNoOfYears + " years.";	
+		
+		//Adding Interest Logic
+		FinalString = FinalString + "<br> Interest Amount: " + interestAmount;
 		document.getElementById("outputDiv").innerHTML = FinalString;
 	}else
 	{
