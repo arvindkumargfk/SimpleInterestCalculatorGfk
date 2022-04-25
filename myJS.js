@@ -40,7 +40,7 @@ function calcTotal(){
 		alert("Interest Rate should be greater than 0");
 	}
 
-	console.log("Hello");
+	//console.log("Hello");
 	console.log("varSInterest: " + varSInterest);
 	console.log("finalInterest: " + finalInterest);
 	console.log(FinalString);
