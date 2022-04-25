@@ -9,7 +9,7 @@
 	<script src="myJS.js"></script>
 </head>
 
-	<body>
+	<body onload="fetchInterest()">
 		<center>
 			<div id='myDiv' >
 			<br/>
@@ -22,7 +22,8 @@
 					</tr>
 					<tr>
 						<td> <label for="InterestRate">Interest Rate:</label>  </td>
-						<td> <input type="number" id="InterestRate" name="InterestRate" min="1" step="1" max="100" > </td> 
+						<td> <input type="range" id="InterestRate" name="InterestRate" min="1" max="30" value="0"> <span id="InterestRateSpan"> 0 </span>   </td> 
+						<!--<input type="number" id="InterestRate" name="InterestRate" min="1" step="1" max="100" >  -->
 					</tr>
 					<tr>
 						<td> <label for="NoOfYears">No. Of Years:</label>  </td>
